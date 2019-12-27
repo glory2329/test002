@@ -20,7 +20,7 @@ import java.util.UUID;
 public class SendMessageController {
 
     @Autowired
-    RabbitTemplate rabbitTemplate;  //使用RabbitTemplate,这提供了接收/发送等等方法
+    RabbitTemplate rabbitTemplate;    //使用RabbitTemplate,这提供了接收/发送等等方法
 
     @GetMapping("/sendDirectMessage")
     public String sendDirectMessage() {
