@@ -37,6 +37,7 @@ public class SendMessageController {
         for (int i = 100; i < 200; i++) {
             rabbitTemplate.convertAndSend("justin.exchange", "justin.queue", i+"");
         }
+        
         return "ok";
     }
 
